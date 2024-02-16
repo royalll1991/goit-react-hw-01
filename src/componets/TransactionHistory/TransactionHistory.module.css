@@ -1,0 +1,11 @@
+.tableBorder {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid black;}
+
+.colorFirst {
+    background-color: grey;
+}
+.secondColor{background-color: azure;}
+
+.text{font-size: 20px};

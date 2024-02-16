@@ -1,0 +1,17 @@
+.box{border: 3px black solid;
+    border-radius: 10%;
+width: 120px;
+margin-right: 10px;
+padding: 5px;}
+
+.img{width: 80px;
+height: 80px;}
+
+.name{color: black;
+font-size: 30px;}
+
+.textOn{color: green;
+    font-size: 25px;}
+
+.textOff{color: red;
+    font-size: 25px;}

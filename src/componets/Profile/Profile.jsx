@@ -1,13 +1,11 @@
-import css from "../Profile/Profile.module.css"
-import clsx from "clsx"
+import css from './Profile.module.css'
 
-const Profile = ({ name, tag, location, image, stats: { followers, views, likes } }) => {
-  const Border = clsx(css.listItem, css.listItemSecond);
+const Profile = ({ name, tag, location, avatar, stats: { followers, views, likes } }) => {
       return (
       <div className={css.box}>
         <div >
           <img
-            src={image}
+            src={avatar}
             alt="User avatar"
           />
           <p className={css.name}
@@ -20,7 +18,7 @@ const Profile = ({ name, tag, location, image, stats: { followers, views, likes 
             <span>Followers</span>
             <span>{followers}</span>
           </li>
-          <li className = {Border}>
+          <li className = {css.listItemSecond}>
             <span>Views</span>
             <span>{views}</span>
           </li>

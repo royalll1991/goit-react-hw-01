@@ -1,9 +1,9 @@
 
-import transactions from "../../transactions.json";
+
 import css from "./TransactionHistory.module.css";
 import clsx from "clsx";
 
-const TransactionHistory = () => {
+const TransactionHistory = ({items}) => {
   
 
   const colorBox = (index) =>
@@ -20,7 +20,7 @@ const TransactionHistory = () => {
       </thead>
 
       <tbody>
-        {transactions.map(({ id, type, amount, currency }, index) => (
+        {items.map(({ id, type, amount, currency }, index) => (
           <tr className={colorBox(index)} key={id}>
             <td>{type}</td>
             <td>{amount}</td>

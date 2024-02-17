@@ -1,8 +1,8 @@
-import friends from "../../friends.json"
-import FriendListItem from '../FriendListItem/FriendListItem'
+
+import FriendListItem from './FriendListItem/FriendListItem'
 import css from '../FriendList/FriendList.module.css'
 
-const FriendList = () => {
+const FriendList = ({friends}) => {
     return (<ul className={css.list}>
         {friends.map((friend) => (
                 <li className={css.box} key={friend.id}>
